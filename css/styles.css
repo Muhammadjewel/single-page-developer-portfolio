@@ -27,7 +27,25 @@ body {
   font-weight: 500;
   line-height: 162.5%;
   background-color: var(--color-bg-body);
+  background-image: url("../img/bg-circles.svg");
+  background-repeat: no-repeat;
+  background-position: -342px 124px;
   color: var(--color-text-body);
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+body::after {
+  position: absolute;
+  z-index: 2;
+  top: 254px;
+  right: 0;
+  transform: translateX(50%);
+  width: 129px;
+  height: 129px;
+  border: 1px solid var(--color-white);
+  border-radius: 50%;
+  content: "";
 }
 
 img {
@@ -188,6 +206,11 @@ select:-webkit-autofill:focus {
   width: 174px;
   height: 383px;
   object-fit: cover;
+}
+
+.hero__content {
+  width: 100%;
+  max-width: 27.8125rem;
 }
 
 .hero__heading {
