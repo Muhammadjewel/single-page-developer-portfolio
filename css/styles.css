@@ -31,21 +31,6 @@ body {
   background-repeat: no-repeat;
   background-position: -342px 124px;
   color: var(--color-text-body);
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-
-body::after {
-  position: absolute;
-  z-index: 2;
-  top: 254px;
-  right: 0;
-  transform: translateX(50%);
-  width: 129px;
-  height: 129px;
-  border: 1px solid var(--color-white);
-  border-radius: 50%;
-  content: "";
 }
 
 img {
@@ -169,6 +154,14 @@ select:-webkit-autofill:focus {
   letter-spacing: 0.14288em;
   text-transform: uppercase;
   color: var(--color-white);
+}
+
+.underlined-link:hover {
+  color: var(--color-primary);
+}
+
+.underlined-link:active {
+  opacity: 0.6;
 }
 
 
