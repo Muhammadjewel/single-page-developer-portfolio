@@ -386,6 +386,10 @@ only screen and (                min-resolution: 2dppx) {
     padding-bottom: 40px;
   }
 
+  .header__socials {
+    margin-right: 30px;
+  }
+
   .hero {
     padding-top: 88px;
     padding-bottom: 220px;
@@ -413,7 +417,7 @@ only screen and (                min-resolution: 2dppx) {
   }
 
   .hero__heading {
-    margin-bottom: 44px;
+    margin-bottom: 38px;
     font-size: 5.5rem;
     letter-spacing: -0.15625rem;
   }
@@ -442,6 +446,6 @@ only screen and (                min-resolution: 2dppx) {
 @media only screen and (min-width: 75em) {
   .hero__img {
     right: auto;
-    left: calc(50% + 141px);
+    left: calc(50% + 111px);
   }
 }
