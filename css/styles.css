@@ -27,9 +27,13 @@ body {
   font-weight: 500;
   line-height: 162.5%;
   background-color: var(--color-bg-body);
-  background-image: url("../img/bg-circles.svg");
+  background-image:
+    url("../img/bg-circles.svg"),
+    url("../img/bg-circles.svg");
   background-repeat: no-repeat;
-  background-position: -342px 124px;
+  background-position:
+    -342px 124px,
+    right -344px top 1287px;
   color: var(--color-text-body);
 }
 
@@ -242,6 +246,31 @@ select:-webkit-autofill:focus {
 }
 
 
+/* TECH-EXPERIENCE */
+.tech-experience__inner {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-top: 1px solid var(--color-white);
+  text-align: center;
+}
+
+.tech-experience__list {
+  display: grid;
+  gap: 24px 8px;
+  padding: 0;
+  list-style: none;
+}
+
+.tech-experience__title {
+  margin-bottom: 1px;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.0625rem;
+  color: var(--color-white);
+}
+
+
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (   min--moz-device-pixel-ratio: 2),
@@ -261,7 +290,9 @@ only screen and (                min-resolution: 2dppx) {
   body {
     font-size: 1.125rem;
     line-height: 155.556%;
-    background-position: -265px 86px;
+    background-position:
+      -265px 86px,
+      right -332px top 1120px;
   }
 
   .logo__img {
@@ -318,12 +349,36 @@ only screen and (                min-resolution: 2dppx) {
   .hero__text {
     margin-bottom: 34px;
   }
+
+  .tech-experience__inner {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: left;
+  }
+
+  .tech-experience__list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 52px 8px;
+  }
+
+  .tech-experience__item {
+    display: grid;
+    gap: 14px;
+  }
+
+  .tech-experience__title {
+    font-size: 3rem;
+    line-height: 116.667%;
+    letter-spacing: -0.09375rem;
+  }
 }
 
 /* 992px */
 @media only screen and (min-width: 62em) {
   body {
-    background-position: calc(50% - 620px) 133px;
+    background-position:
+      calc(50% - 620px) 133px,
+      calc(50% + 710px) 1077px;
   }
 
   .header {
@@ -351,8 +406,6 @@ only screen and (                min-resolution: 2dppx) {
     width: 445px;
     height: 720px;
     top: -112px;
-    right: auto;
-    left: calc(50% + 141px);
   }
 
   .hero__content {
@@ -372,5 +425,23 @@ only screen and (                min-resolution: 2dppx) {
   .hero__text {
     max-width: 27.8125rem;
     margin-bottom: 66px;
+  }
+
+  .tech-experience__inner {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+
+  .tech-experience__list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 58px 30px;
+  }
+}
+
+/* 1200px */
+@media only screen and (min-width: 75em) {
+  .hero__img {
+    right: auto;
+    left: calc(50% + 141px);
   }
 }
