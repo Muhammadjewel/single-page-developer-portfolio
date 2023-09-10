@@ -227,6 +227,10 @@ select:-webkit-autofill:focus {
   color: var(--color-white);
 }
 
+.hero__heading-break {
+  display: none;
+}
+
 .hero__hightlighted-text {
   display: inline-block;
   border-bottom: 4px solid var(--color-primary);
@@ -293,6 +297,10 @@ only screen and (                min-resolution: 2dppx) {
 
   .hero__heading {
     font-size: 4.5rem;
+  }
+
+  .hero__heading-break {
+    display: inline;
   }
 }
 
