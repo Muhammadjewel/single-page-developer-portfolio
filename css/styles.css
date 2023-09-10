@@ -406,7 +406,7 @@ only screen and (                min-resolution: 2dppx) {
     width: 129px;
     height: 129px;
     top: 321px;
-    right: 380px;
+    right: 412px;
     border: 1px solid var(--color-white);
     border-radius: 50%;
     background: none;
@@ -416,7 +416,7 @@ only screen and (                min-resolution: 2dppx) {
     width: 445px;
     height: 720px;
     top: -200px;
-    right: 0;
+    right: 32px;
   }
 
   .hero__content {
