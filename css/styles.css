@@ -187,12 +187,17 @@ select:-webkit-autofill:focus {
 
 /* HERO */
 .hero {
-  position: relative;
   padding-bottom: 80px;
   text-align: center;
 }
 
-.hero::after {
+.hero__container {
+  position: relative;
+  display: grid;
+  justify-items: center;
+}
+
+.hero__container::after {
   position: absolute;
   z-index: 1;
   right: 0;
@@ -202,11 +207,6 @@ select:-webkit-autofill:focus {
   background-image: url("../img/hero-circle.svg");
   background-size: contain;
   content: "";
-}
-
-.hero__container {
-  display: grid;
-  justify-items: center;
 }
 
 .hero__img {
@@ -319,19 +319,19 @@ only screen and (                min-resolution: 2dppx) {
     text-align: left;
   }
 
-  .hero::after {
-    top: 380px;
-  }
-
   .hero__container {
     justify-items: start;
+  }
+
+  .hero__container::after {
+    top: 319px;
   }
 
   .hero__img {
     position: absolute;
     z-index: -1;
     right: 0;
-    top: -90px;
+    top: -152px;
     width: 322px;
     height: 600px;
     margin: 0;
@@ -373,6 +373,13 @@ only screen and (                min-resolution: 2dppx) {
   }
 }
 
+/* 900px */
+@media only screen and (min-width: 56.25em) {
+  .hero__content {
+    max-width: 30rem;
+  }
+}
+
 /* 992px */
 @media only screen and (min-width: 62em) {
   body {
@@ -395,12 +402,11 @@ only screen and (                min-resolution: 2dppx) {
     padding-bottom: 220px;
   }
 
-  .hero::after {
+  .hero__container::after {
     width: 129px;
     height: 129px;
-    top: 391px;
-    right: auto;
-    left: calc(50% + 74px);
+    top: 321px;
+    right: 380px;
     border: 1px solid var(--color-white);
     border-radius: 50%;
     background: none;
@@ -409,7 +415,8 @@ only screen and (                min-resolution: 2dppx) {
   .hero__img {
     width: 445px;
     height: 720px;
-    top: -112px;
+    top: -200px;
+    right: 0;
   }
 
   .hero__content {
@@ -443,9 +450,9 @@ only screen and (                min-resolution: 2dppx) {
 }
 
 /* 1200px */
-@media only screen and (min-width: 75em) {
+/* @media only screen and (min-width: 75em) {
   .hero__img {
     right: auto;
     left: calc(50% + 111px);
   }
-}
+} */
