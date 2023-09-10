@@ -85,7 +85,7 @@ select:-webkit-autofill:focus {
 /* CONTAINER */
 .container {
   width: 100%;
-  max-width: 1166px;
+  max-width: 73.125rem;
   padding-left: var(--container-padding);
   padding-right: var(--container-padding);
   margin-left: auto;
@@ -151,7 +151,7 @@ select:-webkit-autofill:focus {
   font-size: 1rem;
   font-weight: 700;
   line-height: 162.5%;
-  letter-spacing: 0.14288em;
+  letter-spacing: 0.14288rem;
   text-transform: uppercase;
   color: var(--color-white);
 }
@@ -223,7 +223,7 @@ select:-webkit-autofill:focus {
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 1;
-  letter-spacing: -0.071em;
+  letter-spacing: -0.071rem;
   color: var(--color-white);
 }
 
@@ -252,18 +252,24 @@ only screen and (                min-resolution: 2dppx) {
 
 }
 
-/* 768px */
-@media only screen and (min-width: 48em) {
+/* 700px */
+@media only screen and (min-width: 43.75em) {
   :root {
     --container-padding: 30px;
   }
 
   body {
+    font-size: 1.125rem;
+    line-height: 155.556%;
     background-position: -265px 86px;
   }
 
   .logo__img {
     width: 172px;
+  }
+
+  .socials__list {
+    gap: 32px;
   }
 
   .header {
@@ -278,7 +284,12 @@ only screen and (                min-resolution: 2dppx) {
 
   .hero {
     padding-top: 60px;
+    padding-bottom: 60px;
     text-align: left;
+  }
+
+  .hero::after {
+    top: 380px;
   }
 
   .hero__container {
@@ -289,25 +300,77 @@ only screen and (                min-resolution: 2dppx) {
     position: absolute;
     z-index: -1;
     right: 0;
-    top: -152px;
+    top: -90px;
     width: 322px;
     height: 600px;
     margin: 0;
   }
 
   .hero__heading {
+    margin-bottom: 66px;
     font-size: 4.5rem;
   }
 
   .hero__heading-break {
     display: inline;
   }
+
+  .hero__text {
+    margin-bottom: 34px;
+  }
 }
 
 /* 992px */
 @media only screen and (min-width: 62em) {
+  body {
+    background-position: calc(50% - 620px) 133px;
+  }
+
   .header {
     padding-top: 40px;
     padding-bottom: 40px;
+  }
+
+  .hero {
+    padding-top: 88px;
+    padding-bottom: 220px;
+  }
+
+  .hero::after {
+    width: 129px;
+    height: 129px;
+    top: 391px;
+    right: auto;
+    left: calc(50% + 74px);
+    border: 1px solid var(--color-white);
+    border-radius: 50%;
+    background: none;
+  }
+
+  .hero__img {
+    width: 445px;
+    height: 720px;
+    top: -112px;
+    right: auto;
+    left: calc(50% + 141px);
+  }
+
+  .hero__content {
+    max-width: 44.375rem;
+  }
+
+  .hero__heading {
+    margin-bottom: 44px;
+    font-size: 5.5rem;
+    letter-spacing: -0.15625rem;
+  }
+
+  .hero__heading-break {
+    display: none;
+  }
+
+  .hero__text {
+    max-width: 27.8125rem;
+    margin-bottom: 66px;
   }
 }
