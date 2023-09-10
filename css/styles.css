@@ -167,6 +167,8 @@ select:-webkit-autofill:focus {
 
 /* HEADER */
 .header {
+  position: relative;
+  z-index: 5;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -261,8 +263,6 @@ only screen and (                min-resolution: 2dppx) {
   }
 
   .header {
-    position: relative;
-    z-index: 5;
     padding-top: 30px;
     padding-bottom: 30px;
   }
