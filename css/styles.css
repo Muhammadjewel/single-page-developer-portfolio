@@ -107,6 +107,7 @@ select:-webkit-autofill:focus {
 .logo {
   display: block;
   text-decoration: none;
+  transition: opacity 0.3s ease;
 }
 
 .logo:hover {
@@ -135,6 +136,8 @@ select:-webkit-autofill:focus {
 .socials__link {
   display: block;
   color: var(--color-white);
+  transition: color 0.3s ease,
+    opacity 0.3s ease;
 }
 
 .socials__link:hover {
@@ -158,6 +161,9 @@ select:-webkit-autofill:focus {
   letter-spacing: 0.14288rem;
   text-transform: uppercase;
   color: var(--color-white);
+  white-space: nowrap;
+  transition: color 0.3s ease,
+    opacity 0.3s ease;
 }
 
 .underlined-link:hover {
