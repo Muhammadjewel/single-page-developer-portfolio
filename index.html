@@ -252,15 +252,16 @@
           <h2 class="contact__heading">Contact</h2>
           <p class="contact__text">I would love to hear about your project and how I could help. Please fill in the form, and I’ll get back to you as soon as possible.</p>
         </div>
-        <form class="contact__form form" action="https://echo.htmlacademy.ru" method="POST">
+        <form class="contact__form form" id="contact-form" action="https://echo.htmlacademy.ru" method="POST">
           <div class="form__group">
-            <input class="form__field" type="text" name="name" placeholder="Name" aria-label="Name">
+            <input class="form__field" type="text" name="name" placeholder="Name" aria-label="Name" required>
           </div>
           <div class="form__group">
-            <input class="form__field" type="email" name="email" placeholder="Email" aria-label="Email">
+            <input class="form__field" type="email" name="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" placeholder="Email" aria-label="Email" required>
+            <div class="form__error-message">Sorry, invalid format here</div>
           </div>
           <div class="form__group">
-            <textarea class="form__field form__field--textarea" name="message" placeholder="Message" aria-label="Email"></textarea>
+            <textarea class="form__field form__field--textarea" name="message" placeholder="Message" minlength="10" aria-label="Email" required></textarea>
           </div>
           <button class="form__submit underlined-link" type="submit">Send message</button>
         </form>
