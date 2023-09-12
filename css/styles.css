@@ -151,6 +151,15 @@ select:-webkit-autofill:focus {
 }
 
 
+/* LOGO SOCIALS */
+.logo-socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+
 /* UNDERLINED LINK */
 .underlined-link {
   display: inline-block;
@@ -186,13 +195,6 @@ select:-webkit-autofill:focus {
   z-index: 5;
   padding-top: 20px;
   padding-bottom: 20px;
-}
-
-.header__container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
 }
 
 
@@ -482,7 +484,7 @@ only screen and (                min-resolution: 2dppx) {
     padding-bottom: 30px;
   }
 
-  .header__container {
+  .logo-socials {
     flex-direction: row;
     justify-content: space-between;
   }
@@ -590,13 +592,13 @@ only screen and (                min-resolution: 2dppx) {
       calc(50% + 710px) 1077px;
   }
 
+  .logo-socials__socials {
+    margin-right: 30px;
+  }
+
   .header {
     padding-top: 40px;
     padding-bottom: 40px;
-  }
-
-  .header__socials {
-    margin-right: 30px;
   }
 
   .hero {
